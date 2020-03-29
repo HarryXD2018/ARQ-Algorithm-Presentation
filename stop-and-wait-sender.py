@@ -29,11 +29,11 @@ class Sender(threading.Thread):
         return frame
 
     def send_frame(self, frame):
-        print("Send frame: Parity{}\tFrame{}\tsequence_number{}".format(frame[0], frame[1:-1], frame[-1]))
+        print("Send frame: Parity:{}\t Frame:{}\t sequence_number:{}".format(frame[0], frame[1:-1], frame[-1]))
         return frame
 
     def resend_frame(self):
-        print("Resend Frame{}".format(self.store_frame))
+        print("Resend Frame {}".format(self.store_frame))
         return self.store_frame
 
     def receive(self, frame_ack):
@@ -60,6 +60,7 @@ class Sender(threading.Thread):
             if time.time() - send_time > 1:     # Timeout
                 send_time = time.time()         # 重新计时
                 self.resend_frame()
+
 
 if __name__ == "__main__":
     sender = Sender("hello")
