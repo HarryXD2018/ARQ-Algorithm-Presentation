@@ -57,7 +57,7 @@ class Sender(threading.Thread):
                 send_time = 0
                 self.can_send = True
                 self.store_frame = ""   # 清除副本
-            if time.time() - send_time > 1:     # Timeout
+            if time.time() - send_time > 1:     # Timeout 1s
                 send_time = time.time()         # 重新计时
                 self.resend_frame()
 
