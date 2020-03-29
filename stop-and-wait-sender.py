@@ -20,7 +20,7 @@ class Sender(threading.Thread):
         self.frames = [bin(ord(ch)).replace('0b', '') for ch in content]
 
     def make_frame(self):
-        # frame: 偶检验，数据，序列号
+        # frame: 偶校验，数据，序列号
         parity = 0
         for ch in self.frames.pop(0):   # 将第一个帧取出（不放回）
             parity += int(ch)
@@ -29,9 +29,11 @@ class Sender(threading.Thread):
         return frame
 
     def send_frame(self, frame):
+        print("Send frame: Parity{}\tFrame{}\tsequence_number{}".format(frame[0], frame[1:-1], frame[-1]))
         return frame
 
     def resend_frame(self):
+        print("Resend Frame{}".format(self.store_frame))
         return self.store_frame
 
     def receive(self, frame_ack):
@@ -40,6 +42,10 @@ class Sender(threading.Thread):
     def run(self):
         send_time = 0   # 初始化
         while True:
+            if self.frames is None:
+                # 如果没有需要发送的帧，就退出了
+                # 注：这不是现实中的，只是便于程序的运行
+                break
             if self.can_send:
                 frame = self.make_frame()
                 self.store_frame = frame    # 保留副本
@@ -55,7 +61,7 @@ class Sender(threading.Thread):
                 send_time = time.time()         # 重新计时
                 self.resend_frame()
 
-            
 if __name__ == "__main__":
     sender = Sender("hello")
+    sender.start()
     print(sender.frames)
