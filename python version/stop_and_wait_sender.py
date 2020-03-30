@@ -39,7 +39,6 @@ class Sender:
         url = "https://127.0.0.1:8189/api/test?frame=" + frame
         r = requests.get(url, verify=False)
         self.ACK = r.text
-        print(r.text)
         return frame
 
     def resend_frame(self):
@@ -48,11 +47,9 @@ class Sender:
         url = "https://127.0.0.1:8189/api/test?frame=" + self.store_frame
         r = requests.get(url, verify=False)
         self.ACK = r.text
-        print(r.text)
         return self.store_frame
 
     def run(self):
-        send_time = 0  # 初始化
         while True:
             if self.frames is None:
                 # 如果没有需要发送的帧，就退出了
@@ -62,15 +59,14 @@ class Sender:
             if frame == "":
                 break
             self.store_frame = frame  # 保留副本
-            send_time = time.time()  # 计时器开始计时
             self.s = (self.s + 1) % 2  # s  变量取反
-            print(frame)
             self.send_frame(frame)  # 发送副本
+            print(frame)
             time.sleep(0.5)
             # 接收返回的ACK帧
-            if self.ACK == self.s:  # 成功接收
+            if self.ACK != self.s:  # 成功接收
                 self.store_frame = ""  # 清除副本
-            elif self.ACK != self.s:  # 未成功接收
+            elif self.ACK == self.s:  # 未成功接收
                 self.resend_frame()
 
 

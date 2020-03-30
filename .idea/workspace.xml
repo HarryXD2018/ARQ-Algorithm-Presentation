@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c2ba99ef-55b3-48d2-bdd5-91c085578b48" name="Default Changelist" comment="update">
+    <list default="true" id="c2ba99ef-55b3-48d2-bdd5-91c085578b48" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/python version/stop_and_wait.py" beforeDir="false" afterPath="$PROJECT_DIR$/python version/stop_and_wait.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/python version/stop_and_wait_receiver.py" beforeDir="false" afterPath="$PROJECT_DIR$/python version/stop_and_wait_receiver.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/python version/stop_and_wait_sender.py" beforeDir="false" afterPath="$PROJECT_DIR$/python version/stop_and_wait_sender.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -92,7 +90,7 @@
       <workItem from="1585406379675" duration="4848000" />
       <workItem from="1585491452693" duration="2409000" />
       <workItem from="1585528747011" duration="6228000" />
-      <workItem from="1585542267456" duration="11662000" />
+      <workItem from="1585542267456" duration="12985000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1585542439432</created>
@@ -101,7 +99,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585542439432</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="update">
+      <created>1585557929874</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1585557929874</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TodoView">
@@ -125,26 +130,26 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="184" y="112" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900@0.0.1440.900" timestamp="1585542610530" />
-    <state x="281" y="52" key="CommitChangelistDialog2" timestamp="1585542585124">
+    <state x="281" y="52" key="CommitChangelistDialog2" timestamp="1585557929719">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="281" y="52" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1585542585124" />
-    <state width="668" height="176" key="GridCell.Tab.0.bottom" timestamp="1585557908338">
+    <state x="281" y="52" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1585557929719" />
+    <state width="668" height="176" key="GridCell.Tab.0.bottom" timestamp="1585559361227">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="668" height="176" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1585557908338" />
-    <state width="668" height="176" key="GridCell.Tab.0.center" timestamp="1585557908337">
+    <state width="668" height="176" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1585559361227" />
+    <state width="668" height="176" key="GridCell.Tab.0.center" timestamp="1585559361225">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="668" height="176" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1585557908337" />
-    <state width="668" height="176" key="GridCell.Tab.0.left" timestamp="1585557908336">
+    <state width="668" height="176" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1585559361225" />
+    <state width="668" height="176" key="GridCell.Tab.0.left" timestamp="1585559361225">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="668" height="176" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1585557908336" />
-    <state width="668" height="176" key="GridCell.Tab.0.right" timestamp="1585557908338">
+    <state width="668" height="176" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1585559361225" />
+    <state width="668" height="176" key="GridCell.Tab.0.right" timestamp="1585559361226">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="668" height="176" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1585557908338" />
+    <state width="668" height="176" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1585559361226" />
     <state width="1398" height="302" key="GridCell.Tab.1.bottom" timestamp="1585553228143">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -169,10 +174,10 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="221" y="89" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1585542276563" />
-    <state x="320" y="190" key="Vcs.Push.Dialog.v2" timestamp="1585542444030">
+    <state x="320" y="190" key="Vcs.Push.Dialog.v2" timestamp="1585557933370">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="320" y="190" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1585542444030" />
+    <state x="320" y="190" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1585557933370" />
     <state x="503" y="374" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1585542587247">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -200,7 +205,7 @@
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/ARQ_Algorithm_Presentation$stop_and_wait.coverage" NAME="stop_and_wait Coverage Results" MODIFIED="1585557908330" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/python version" />
+    <SUITE FILE_PATH="coverage/ARQ_Algorithm_Presentation$stop_and_wait.coverage" NAME="stop_and_wait Coverage Results" MODIFIED="1585559361210" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/python version" />
     <SUITE FILE_PATH="coverage/ARQ_Algorithm_Presentation$stop_and_wait__1_.coverage" NAME="stop_and_wait (1) Coverage Results" MODIFIED="1585542602675" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/python version" />
   </component>
 </project>
