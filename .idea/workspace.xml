@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c2ba99ef-55b3-48d2-bdd5-91c085578b48" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/Network-ARQ.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Network-ARQ.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="c2ba99ef-55b3-48d2-bdd5-91c085578b48" name="Default Changelist" comment="update">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/python version/stop_and_wait.py" beforeDir="false" afterPath="$PROJECT_DIR$/python version/stop_and_wait.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/python version/stop_and_wait_receiver.py" beforeDir="false" afterPath="$PROJECT_DIR$/python version/stop_and_wait_receiver.py" afterDir="false" />
@@ -26,7 +24,13 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="付铭 &lt;fuming.137@icloud.com&gt;" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="MERGE" />
   </component>
   <component name="ProjectId" id="1Zpi7EYFSlwM4fchDrGELzuS2M8" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -43,10 +47,11 @@
     <property name="last_opened_file_path" value="$USER_HOME$/AppData/Local/Programs/Python/Python36-32" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RunManager" selected="Python.stop_and_wait">
-    <configuration name="stop-and-wait-sender" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager">
+    <configuration name="stop_and_wait" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Network-ARQ" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -54,56 +59,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python version" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="C:\Users\chenh\Desktop\Program\python\Pythonchj\Network-ARQ\stop_and_wait_sender.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="stop-and-wait" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="Network-ARQ" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="C:\Users\chenh\Desktop\Program\python\Pythonchj\Network-ARQ\stop_and_wait.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="stop_and_wait" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="Network-ARQ" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/stop_and_wait.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python version/stop_and_wait.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -115,8 +76,6 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.stop_and_wait" />
-        <item itemvalue="Python.stop-and-wait" />
-        <item itemvalue="Python.stop-and-wait-sender" />
       </list>
     </recent_temporary>
   </component>
@@ -133,8 +92,16 @@
       <workItem from="1585406379675" duration="4848000" />
       <workItem from="1585491452693" duration="2409000" />
       <workItem from="1585528747011" duration="6228000" />
-      <workItem from="1585542267456" duration="160000" />
+      <workItem from="1585542267456" duration="11662000" />
     </task>
+    <task id="LOCAL-00001" summary="update">
+      <created>1585542439432</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1585542439432</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TodoView">
@@ -149,11 +116,67 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="update" />
+    <option name="LAST_COMMIT_MESSAGE" value="update" />
+  </component>
   <component name="WindowStateProjectService">
+    <state x="184" y="112" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1585542610530">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="184" y="112" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900@0.0.1440.900" timestamp="1585542610530" />
+    <state x="281" y="52" key="CommitChangelistDialog2" timestamp="1585542585124">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="281" y="52" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1585542585124" />
+    <state width="668" height="176" key="GridCell.Tab.0.bottom" timestamp="1585557908338">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="668" height="176" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1585557908338" />
+    <state width="668" height="176" key="GridCell.Tab.0.center" timestamp="1585557908337">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="668" height="176" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1585557908337" />
+    <state width="668" height="176" key="GridCell.Tab.0.left" timestamp="1585557908336">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="668" height="176" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1585557908336" />
+    <state width="668" height="176" key="GridCell.Tab.0.right" timestamp="1585557908338">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="668" height="176" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1585557908338" />
+    <state width="1398" height="302" key="GridCell.Tab.1.bottom" timestamp="1585553228143">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="302" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1585553228143" />
+    <state width="1398" height="302" key="GridCell.Tab.1.center" timestamp="1585553228142">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="302" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1585553228142" />
+    <state width="1398" height="302" key="GridCell.Tab.1.left" timestamp="1585553228141">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="302" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1585553228141" />
+    <state width="1398" height="302" key="GridCell.Tab.1.right" timestamp="1585553228142">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="302" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1585553228142" />
+    <state x="431" y="173" key="MultipleFileMergeDialog" timestamp="1585542463155">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="431" y="173" key="MultipleFileMergeDialog/0.0.1440.900@0.0.1440.900" timestamp="1585542463155" />
     <state x="221" y="89" key="SettingsEditor" timestamp="1585542276563">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="221" y="89" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1585542276563" />
+    <state x="320" y="190" key="Vcs.Push.Dialog.v2" timestamp="1585542444030">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="320" y="190" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1585542444030" />
+    <state x="503" y="374" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1585542587247">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="503" y="374" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1440.900@0.0.1440.900" timestamp="1585542587247" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -175,5 +198,9 @@
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/ARQ_Algorithm_Presentation$stop_and_wait.coverage" NAME="stop_and_wait Coverage Results" MODIFIED="1585557908330" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/python version" />
+    <SUITE FILE_PATH="coverage/ARQ_Algorithm_Presentation$stop_and_wait__1_.coverage" NAME="stop_and_wait (1) Coverage Results" MODIFIED="1585542602675" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/python version" />
   </component>
 </project>
