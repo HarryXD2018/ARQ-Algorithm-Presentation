@@ -7,10 +7,9 @@ from multiprocessing import Queue
 
 
 class Sender(threading.Thread):
-    def __init__(self, content:str):
-        threading.Thread.__init__(self) # 父类的init
-        self.queue1 = Queue()     # 创建一个队列，用于进程通信
-        self.queue2 = Queue()
+    def __init__(self, content: str,queue):
+        threading.Thread.__init__(self)  # 父类的init
+        self.queue1 = queue
         self.e = threading.Event()
         self.lock = threading.Lock()
         self.s = 0  # 发送方控制变量
@@ -18,17 +17,17 @@ class Sender(threading.Thread):
         self.store_frame = ""
         self.frames = []
         self.frame_init(content)
-        self.ACK = 0    # 用于接收ACK信号
-        print("sender inti")
+        self.ACK = 0  # 用于接收ACK信号
+        print("sender init")
 
-    def frame_init(self, content:str):
+    def frame_init(self, content: str):
         # 模拟数据链路层之上的层次
         self.frames = [bin(ord(ch)).replace('0b', '') for ch in content]
 
     def make_frame(self):
         # frame: 偶校验，数据，序列号
         parity = 0
-        for ch in self.frames.pop(0):   # 将第一个帧取出（不放回）
+        for ch in self.frames.pop(0):  # 将第一个帧取出（不放回）
             parity += int(ch)
         parity = parity % 2
         frame = "{}{}{}".format(parity, self.frames[0], self.s)
@@ -45,11 +44,11 @@ class Sender(threading.Thread):
         return self.store_frame
 
     def receive(self):
-        frame_ack = self.queue2.get()
+        frame_ack = self.queue1.get()
         self.ACK = int(frame_ack)
 
     def run(self):
-        send_time = 0   # 初始化
+        send_time = 0  # 初始化
         while True:
             if self.frames is None:
                 # 如果没有需要发送的帧，就退出了
@@ -58,21 +57,21 @@ class Sender(threading.Thread):
             self.lock.acquire()
             if self.can_send:
                 frame = self.make_frame()
-                self.store_frame = frame    # 保留副本
-                send_time = time.time()     # 计时器开始计时
-                self.s = (self.s + 1)%2    # s  变量取反
-                self.send_frame(frame)      # 发送副本
+                self.store_frame = frame  # 保留副本
+                send_time = time.time()  # 计时器开始计时
+                self.s = (self.s + 1) % 2  # s  变量取反
+                self.send_frame(frame)  # 发送副本
                 self.can_send = False
                 # time.sleep(2)
             self.lock.release()
-            self.receive()              # 接收返回的ACK帧
+            self.receive()  # 接收返回的ACK帧
             # self.lock.acquire()
-            if self.ACK == self.s:      # 成功接收
+            if self.ACK == self.s:  # 成功接收
                 send_time = 0
                 self.can_send = True
-                self.store_frame = ""   # 清除副本
-            if time.time() - send_time > 3:     # Timeout 1s
-                send_time = time.time()         # 重新计时
+                self.store_frame = ""  # 清除副本
+            if time.time() - send_time > 3:  # Timeout 1s
+                send_time = time.time()  # 重新计时
                 self.resend_frame()
 
 
