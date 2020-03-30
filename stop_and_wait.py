@@ -1,5 +1,5 @@
-from stop_and_wait_receiver import *
-from stop_and_wait_sender import *
+# from stop_and_wait_receiver import *
+# from stop_and_wait_sender import *
 
 if __name__ == "__main__":
     data_to_send = "Hello, World"
