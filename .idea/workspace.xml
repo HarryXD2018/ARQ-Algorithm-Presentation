@@ -90,7 +90,7 @@
       <workItem from="1585406379675" duration="4848000" />
       <workItem from="1585491452693" duration="2409000" />
       <workItem from="1585528747011" duration="6228000" />
-      <workItem from="1585542267456" duration="12985000" />
+      <workItem from="1585542267456" duration="14412000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1585542439432</created>
@@ -106,7 +106,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585557929874</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="update">
+      <created>1585559465912</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1585559465912</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TodoView">
@@ -130,42 +137,42 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="184" y="112" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900@0.0.1440.900" timestamp="1585542610530" />
-    <state x="281" y="52" key="CommitChangelistDialog2" timestamp="1585557929719">
+    <state x="281" y="52" key="CommitChangelistDialog2" timestamp="1585559465742">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="281" y="52" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1585557929719" />
-    <state width="668" height="176" key="GridCell.Tab.0.bottom" timestamp="1585559361227">
+    <state x="281" y="52" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1585559465742" />
+    <state width="668" height="349" key="GridCell.Tab.0.bottom" timestamp="1585560746402">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="668" height="176" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1585559361227" />
-    <state width="668" height="176" key="GridCell.Tab.0.center" timestamp="1585559361225">
+    <state width="668" height="349" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1585560746402" />
+    <state width="668" height="349" key="GridCell.Tab.0.center" timestamp="1585560746401">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="668" height="176" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1585559361225" />
-    <state width="668" height="176" key="GridCell.Tab.0.left" timestamp="1585559361225">
+    <state width="668" height="349" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1585560746401" />
+    <state width="668" height="349" key="GridCell.Tab.0.left" timestamp="1585560746400">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="668" height="176" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1585559361225" />
-    <state width="668" height="176" key="GridCell.Tab.0.right" timestamp="1585559361226">
+    <state width="668" height="349" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1585560746400" />
+    <state width="668" height="349" key="GridCell.Tab.0.right" timestamp="1585560746402">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="668" height="176" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1585559361226" />
-    <state width="1398" height="302" key="GridCell.Tab.1.bottom" timestamp="1585553228143">
+    <state width="668" height="349" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1585560746402" />
+    <state width="668" height="302" key="GridCell.Tab.1.bottom" timestamp="1585560575841">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="302" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1585553228143" />
-    <state width="1398" height="302" key="GridCell.Tab.1.center" timestamp="1585553228142">
+    <state width="668" height="302" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1585560575841" />
+    <state width="668" height="302" key="GridCell.Tab.1.center" timestamp="1585560575840">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="302" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1585553228142" />
-    <state width="1398" height="302" key="GridCell.Tab.1.left" timestamp="1585553228141">
+    <state width="668" height="302" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1585560575840" />
+    <state width="668" height="302" key="GridCell.Tab.1.left" timestamp="1585560575840">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="302" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1585553228141" />
-    <state width="1398" height="302" key="GridCell.Tab.1.right" timestamp="1585553228142">
+    <state width="668" height="302" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1585560575840" />
+    <state width="668" height="302" key="GridCell.Tab.1.right" timestamp="1585560575841">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="302" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1585553228142" />
+    <state width="668" height="302" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1585560575841" />
     <state x="431" y="173" key="MultipleFileMergeDialog" timestamp="1585542463155">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -174,14 +181,14 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="221" y="89" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1585542276563" />
-    <state x="320" y="190" key="Vcs.Push.Dialog.v2" timestamp="1585557933370">
+    <state x="320" y="190" key="Vcs.Push.Dialog.v2" timestamp="1585559470448">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="320" y="190" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1585557933370" />
-    <state x="503" y="374" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1585542587247">
+    <state x="320" y="190" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1585559470448" />
+    <state x="503" y="374" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1585559875162">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="503" y="374" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1440.900@0.0.1440.900" timestamp="1585542587247" />
+    <state x="503" y="374" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1440.900@0.0.1440.900" timestamp="1585559875162" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -201,11 +208,16 @@
           <line>8</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/python version/stop_and_wait_sender.py</url>
+          <line>44</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/ARQ_Algorithm_Presentation$stop_and_wait.coverage" NAME="stop_and_wait Coverage Results" MODIFIED="1585559361210" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/python version" />
+    <SUITE FILE_PATH="coverage/ARQ_Algorithm_Presentation$stop_and_wait.coverage" NAME="stop_and_wait Coverage Results" MODIFIED="1585560746382" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/python version" />
     <SUITE FILE_PATH="coverage/ARQ_Algorithm_Presentation$stop_and_wait__1_.coverage" NAME="stop_and_wait (1) Coverage Results" MODIFIED="1585542602675" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/python version" />
   </component>
 </project>
