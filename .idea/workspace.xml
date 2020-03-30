@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="c2ba99ef-55b3-48d2-bdd5-91c085578b48" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/python version/stop_and_wait_sender.py" beforeDir="false" afterPath="$PROJECT_DIR$/python version/stop_and_wait_sender.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python version/stop_and_wait.py" beforeDir="false" afterPath="$PROJECT_DIR$/python version/stop_and_wait.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,7 +90,7 @@
       <workItem from="1585406379675" duration="4848000" />
       <workItem from="1585491452693" duration="2409000" />
       <workItem from="1585528747011" duration="6228000" />
-      <workItem from="1585542267456" duration="14605000" />
+      <workItem from="1585542267456" duration="14985000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1585542439432</created>
@@ -120,7 +120,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585560829970</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="update">
+      <created>1585560986213</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1585560986213</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TodoView">
@@ -144,26 +151,26 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="184" y="112" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900@0.0.1440.900" timestamp="1585542610530" />
-    <state x="281" y="52" key="CommitChangelistDialog2" timestamp="1585560829821">
+    <state x="281" y="52" key="CommitChangelistDialog2" timestamp="1585561350683">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="281" y="52" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1585560829821" />
-    <state width="668" height="349" key="GridCell.Tab.0.bottom" timestamp="1585560746402">
+    <state x="281" y="52" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1585561350683" />
+    <state width="668" height="125" key="GridCell.Tab.0.bottom" timestamp="1585561275014">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="668" height="349" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1585560746402" />
-    <state width="668" height="349" key="GridCell.Tab.0.center" timestamp="1585560746401">
+    <state width="668" height="125" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1585561275014" />
+    <state width="668" height="125" key="GridCell.Tab.0.center" timestamp="1585561275013">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="668" height="349" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1585560746401" />
-    <state width="668" height="349" key="GridCell.Tab.0.left" timestamp="1585560746400">
+    <state width="668" height="125" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1585561275013" />
+    <state width="668" height="125" key="GridCell.Tab.0.left" timestamp="1585561275012">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="668" height="349" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1585560746400" />
-    <state width="668" height="349" key="GridCell.Tab.0.right" timestamp="1585560746402">
+    <state width="668" height="125" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1585561275012" />
+    <state width="668" height="125" key="GridCell.Tab.0.right" timestamp="1585561275013">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="668" height="349" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1585560746402" />
+    <state width="668" height="125" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1585561275013" />
     <state width="668" height="302" key="GridCell.Tab.1.bottom" timestamp="1585560575841">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -224,7 +231,7 @@
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/ARQ_Algorithm_Presentation$stop_and_wait.coverage" NAME="stop_and_wait Coverage Results" MODIFIED="1585560746382" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/python version" />
+    <SUITE FILE_PATH="coverage/ARQ_Algorithm_Presentation$stop_and_wait.coverage" NAME="stop_and_wait Coverage Results" MODIFIED="1585561274987" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/python version" />
     <SUITE FILE_PATH="coverage/ARQ_Algorithm_Presentation$stop_and_wait__1_.coverage" NAME="stop_and_wait (1) Coverage Results" MODIFIED="1585542602675" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/python version" />
   </component>
 </project>
