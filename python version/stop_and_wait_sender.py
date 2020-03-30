@@ -61,7 +61,6 @@ class Sender:
             self.store_frame = frame  # 保留副本
             self.s = (self.s + 1) % 2  # s  变量取反
             self.send_frame(frame)  # 发送副本
-            send_time = time.time()
             print(frame)
             time.sleep(0.5)
             # 接收返回的ACK帧
@@ -69,10 +68,8 @@ class Sender:
                 self.resend_frame()
             elif self.ACK != self.s:  # 成功接收
                 self.store_frame = ""  # 清除副本
-                send_time = 0
             elif self.ACK == self.s:  # 未成功接收
                 self.resend_frame()
-                send_time = 0
 
 
 if __name__ == "__main__":
