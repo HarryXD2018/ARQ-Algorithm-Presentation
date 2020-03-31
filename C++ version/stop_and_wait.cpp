@@ -2,105 +2,139 @@
 #include <stdlib.h>
 #include<fstream.h>  
 
-//ÏÂÃæÊÇÁ½¸öº¯ÊıÔ­ĞÍ 
-void receiver(int,fstream  &,fstream &,ofstream &);//½ÓÊÕ·½ 
-void sender(fstream  &datafile1,fstream  &datafile2,ofstream&datafile3);//·¢ËÍ·½  
+//ä¸‹é¢æ˜¯ä¸¤ä¸ªå‡½æ•°åŸå‹ 
+void receiver(int,fstream  &,fstream &,ofstream &);//æ¥æ”¶æ–¹ 
+void sender(fstream  &datafile1,fstream  &datafile2,ofstream&datafile3);//å‘é€æ–¹  
 
 void main(){
 	fstream  datafile1,datafile2; ofstream datafile3;
-	cout<<"ÏÂÃæ¿ªÊ¼Êı¾İµÄ´«Êä£¬×¢Òâ£º´«ÊäÊı¾İÒÔ¡°!¡±½áÊø"<<endl;
+	cout<<"ä¸‹é¢å¼€å§‹æ•°æ®çš„ä¼ è¾“ï¼Œæ³¨æ„ï¼šä¼ è¾“æ•°æ®ä»¥â€œ!â€ç»“æŸ"<<endl;
 	sender(datafile1,datafile2,datafile3); 
-	cout<<"Êı¾İ´«Êä½áÊø"<<endl; 
+	cout<<"æ•°æ®ä¼ è¾“ç»“æŸ"<<endl; 
 }   
-//½ÓÊÕ¶Ë 
+//æ¥æ”¶ç«¯ 
 
 void receiver(int i,fstream &datafile1, fstream &datafile2, ofstream&datafile3){
 	char r,re;  
 	datafile1.open("file1",ios::out|ios::in);   
 	if(!datafile1){
-		cout<<"ÎÄ¼ş´ò¿ªÊ§°Ü£¡"<<endl; 
+		cout<<"æ–‡ä»¶æ‰“å¼€å¤±è´¥ï¼"<<endl; 
 		exit(0);
 	}  
 	datafile1.seekg(i-1,ios::beg);   
-	datafile1.get(r);//´ò¿ªfile1,²¢´ÓÖ¸¶¨Î»ÖÃ¶ÁÈ¡Ò»¸ö×Ö·û 
+	datafile1.get(r);//æ‰“å¼€file1,å¹¶ä»æŒ‡å®šä½ç½®è¯»å–ä¸€ä¸ªå­—ç¬¦ 
 	if(r!=' ')
 	{ 
-		if(r>='A'&&r<='Z')//Èô¶ÁÈ¡µÄ×Ö·ûÓĞĞ§£¬¼´ÕıÈ·½ÓÊÜ×Ö·û    
+		if(r>='A'&&r<='Z')//è‹¥è¯»å–çš„å­—ç¬¦æœ‰æ•ˆï¼Œå³æ­£ç¡®æ¥å—å­—ç¬¦    
 		{
 			datafile3.open("file3",ios::app); 
 			if(!datafile3)
 			{
-				cout<<"ÎÄ¼ş´ò¿ªÊ§°Ü£¡"<<endl;  exit(0);
+				cout<<"æ–‡ä»¶æ‰“å¼€å¤±è´¥ï¼"<<endl;  exit(0);
 			}
-			datafile3<<r;//½«ÊÕµ½µÄ×Ö·ûĞ´ÈëÎÄ¼şfile3    
-			cout<<"×Ö·ûÒÑÕıÈ·½ÓÊÕ"<<endl;  
-			cout<<"×¼±¸·¢ËÍÈ·ÈÏĞÅÏ¢ACK"<<endl;
-			cout<<"ÇëÊäÈëA,²¢ÒÔ»Ø³µ½áÊø"<<endl;//'A'´ú±í"ACK"    
+			datafile3<<r;//å°†æ”¶åˆ°çš„å­—ç¬¦å†™å…¥æ–‡ä»¶file3    
+			cout<<"å­—ç¬¦å·²æ­£ç¡®æ¥æ”¶"<<endl;  
+			cout<<"å‡†å¤‡å‘é€ç¡®è®¤ä¿¡æ¯ACK"<<endl;
+			cout<<"è¯·è¾“å…¥A,å¹¶ä»¥å›è½¦ç»“æŸ"<<endl;//'A'ä»£è¡¨"ACK"    
 			cin>>re;
     		datafile2.open("file2",ios::out); 
 			if(!datafile2)
 			{
- 				cout<<"ÎÄ¼ş´ò¿ªÊ§°Ü£¡"<<endl;
+ 				cout<<"æ–‡ä»¶æ‰“å¼€å¤±è´¥ï¼"<<endl;
 				exit(0);     
 			}		
-			datafile2<<re;//½«È·ÈÏĞÅÏ¢Ğ´Èëfile2
+			datafile2<<re;//å°†ç¡®è®¤ä¿¡æ¯å†™å…¥file2
 		}
-    	if(r<'A'||r>'Z')//¶ÁÈ¡µÄ×Ö·ûÎŞĞ§£¬¼´½ÓÊÜ×Ö·û³ö´í    
+    	if(r<'A'||r>'Z')//è¯»å–çš„å­—ç¬¦æ— æ•ˆï¼Œå³æ¥å—å­—ç¬¦å‡ºé”™    
 		{
-    		cout<<"½ÓÊÕ×Ö·û´íÎó"<<endl;    
-			cout<<"×¼±¸·¢ËÍĞÅÏ¢NAK"<<endl;
-    		cout<<"ÇëÊäÈë×Ö·û¡®N¡¯£¬²¢ÒÔ»Ø³µ½áÊø";//'N'´ú±í"NAK"    
+    		cout<<"æ¥æ”¶å­—ç¬¦é”™è¯¯"<<endl;    
+			cout<<"å‡†å¤‡å‘é€ä¿¡æ¯NAK"<<endl;
+    		cout<<"è¯·è¾“å…¥å­—ç¬¦â€˜Nâ€™ï¼Œå¹¶ä»¥å›è½¦ç»“æŸ";//'N'ä»£è¡¨"NAK"    
 			cin>>re;
     		datafile3.open("file3");   
 			if(!datafile3)
 			{
-				cout<<"ÎÄ¼ş´ò¿ªÊ§°Ü£¡"<<endl;
+				cout<<"æ–‡ä»¶æ‰“å¼€å¤±è´¥ï¼"<<endl;
  				exit(0);     
 			}
-			datafile3<<re;//·µ»Ø³ö´íĞÅÏ¢£¬½«'N'Ğ´Èëfile3   
+			datafile3<<re;//è¿”å›å‡ºé”™ä¿¡æ¯ï¼Œå°†'N'å†™å…¥file3   
 		}    
 	}
-   datafile1.close(); datafile2.close();   datafile3.close();}   
-//·¢ËÍ¶Ë 
-voidsender(fstream  &datafile1,fstream  &datafile2,ofstream&datafile3){
- chars,st; longi=0;  
-cout<<"Õû¸öĞÅÏ¢ÊäÈëÒÔ¡°£¡¡±½áÊø";
- cout<<"ÇëÊäÈëÒ»¸ö´ı·¢ËÍµÄ×Ö·û,²¢°´»Ø³µ"; cin>>s; 
- datafile1.open("file1",ios::out|ios::in); if(!datafile1) {
-  cout<<"ÎÄ¼ş´ò¿ªÊ§°Ü£¡"<<endl;  exit(0); }  
- datafile1<<s;//·¢ËÍĞÅÏ¢£¬¼´½«´ı·¢ËÍµÄ×Ö·ûĞ´ÈëÎÄ¼şfile1i++;
- cout<<"×Ö·ûÒÑ±»·¢ËÍ"<<endl; datafile1.close(); 
- receiver(i,datafile1,datafile2,datafile3);//µ÷ÓÃ½ÓÊÕ¶Ë½øĞĞÏàÓ¦²Ù×÷  
- while(1) {
- 	if(s=='!') break;
-  for(intt=1;t<=4;t++)//Æğ¶¨Ê±Æ÷µÄ×÷ÓÃ  
+   datafile1.close(); 
+   datafile2.close();   
+   datafile3.close();}   
+//å‘é€ç«¯ 
+void sender(fstream  &datafile1,fstream  &datafile2,ofstream&datafile3)
 {
- datafile2.open("file2",ios::in); if(!datafile2) {
-cout<<"ÎÄ¼ş´ò¿ªÊ§°Ü£¡"<<endl;exit(0); } 
-               
- datafile2.get(st);
-   datafile2.close(); 
-  if(st=='A')//·¢ËÍ·½ÊÕµ½½ÓÊÕ·½µÄÈ·ÈÏĞÅÏ¢ACK   {
-    cout<<"ÉÏÒ»¸ö×Ö·ûÒÑ±»½ÓÊÕ£¡"<<endl;
-    cout<<"ÇëÊäÈëÒ»¸ö´ı·¢ËÍµÄ×Ö·û,²¢°´»Ø³µ"; cin>>s; 
- datafile1.open("file1",ios::out|ios::in); if(!datafile1)     {
-  cout<<"ÎÄ¼ş´ò¿ªÊ§°Ü£¡"<<endl;  exit(0);     }  
- datafile1<<s;//½«ĞÂµÄ´ı·¢ËÍ×Ö·ûĞ´Èëfile1i++;
- cout<<"×Ö·ûÒÑ±»·¢ËÍ"<<endl;     datafile1.close();       
-     receiver(i,datafile1,datafile2,datafile3);//µ÷ÓÃ½ÓÊÕ¶Ë½øĞĞÏàÓ¦²Ù×÷  
- break; 
-   }
-if(st=='N')//·¢ËÍ·½ÊÕµ½½ÓÊÕ·½µÄ³ö´íĞÅÏ¢NAK   {
-    cout<<"ÉÏÒ»¸ö×Ö·û³ö´í£¡"<<endl;
-cout<<"ÏÖÔÚĞèÖØĞÂ·¢ËÍÔ­×Ö·û"<<endl;    datafile1.open("file1",ios::out|ios::in);   
- if(!datafile1)     {
-  cout<<"ÎÄ¼ş´ò¿ªÊ§°Ü£¡"<<endl;  exit(0);     }
-     datafile1<<s;i++;
- cout<<"×Ö·ûÒÑ±»·¢ËÍ"<<endl;    datafile1.close();  
-    receiver(i,datafile1,datafile2,datafile3);//µ÷ÓÃ½ÓÊÕ¶Ë½øĞĞÏàÓ¦²Ù×÷  
- break;   }  }
-   cout<<"¶¨Ê±Æ÷³¬Ê±£¬ÏÖÖØĞÂ·¢ËÍÔ­×Ö·û¡£"<<endl;datafile1.open("file1",ios::out|ios::in); if(!datafile1)     {
-  cout<<"ÎÄ¼ş´ò¿ªÊ§°Ü£¡"<<endl;  exit(0);     }
-     datafile1<<s;i++;
- cout<<"×Ö·ûÒÑ±»·¢ËÍ"<<endl;datafile1.close(); 
-    receiver(i,datafile1,datafile2,datafile3);}}
+	char s,st; long i = 0;  
+	cout<<"æ•´ä¸ªä¿¡æ¯è¾“å…¥ä»¥â€œï¼â€ç»“æŸ";
+ 	cout<<"è¯·è¾“å…¥ä¸€ä¸ªå¾…å‘é€çš„å­—ç¬¦,å¹¶æŒ‰å›è½¦"; 
+	cin>>s; 
+ 	datafile1.open("file1",ios::out|ios::in); if(!datafile1) {
+  	cout<<"æ–‡ä»¶æ‰“å¼€å¤±è´¥ï¼"<<endl;
+	exit(0); }  
+ 	datafile1<<s;//å‘é€ä¿¡æ¯ï¼Œå³å°†å¾…å‘é€çš„å­—ç¬¦å†™å…¥æ–‡ä»¶
+	file1i++;
+ 	cout<<"å­—ç¬¦å·²è¢«å‘é€"<<endl; 
+	datafile1.close(); 
+ 	receiver(i,datafile1,datafile2,datafile3);//è°ƒç”¨æ¥æ”¶ç«¯è¿›è¡Œç›¸åº”æ“ä½œ  
+ 	while(1) 
+	{
+ 		if(s=='!') break;
+	  	for(intt=1;t<=4;t++)//èµ·å®šæ—¶å™¨çš„ä½œç”¨  
+		{
+		 	datafile2.open("file2",ios::in); 
+			if(!datafile2) 
+			{
+				cout<<"æ–‡ä»¶æ‰“å¼€å¤±è´¥ï¼"<<endl;
+				exit(0); 
+			}             
+		 	datafile2.get(st);
+		   	datafile2.close(); 
+		  	if(st=='A')//å‘é€æ–¹æ”¶åˆ°æ¥æ”¶æ–¹çš„ç¡®è®¤ä¿¡æ¯ACK   
+			{
+		    	cout<<"ä¸Šä¸€ä¸ªå­—ç¬¦å·²è¢«æ¥æ”¶ï¼"<<endl;
+		    	cout<<"è¯·è¾“å…¥ä¸€ä¸ªå¾…å‘é€çš„å­—ç¬¦,å¹¶æŒ‰å›è½¦"; 
+				cin>>s; 
+		 		datafile1.open("file1",ios::out|ios::in); 
+				if(!datafile1)     
+				{
+		  			cout<<"æ–‡ä»¶æ‰“å¼€å¤±è´¥ï¼"<<endl;  exit(0);     
+				}  
+			 	datafile1<<s;//å°†æ–°çš„å¾…å‘é€å­—ç¬¦å†™å…¥
+				file1i++;
+			 	cout<<"å­—ç¬¦å·²è¢«å‘é€"<<endl;
+			    datafile1.close();       
+			    receiver(i,datafile1,datafile2,datafile3);//è°ƒç”¨æ¥æ”¶ç«¯è¿›è¡Œç›¸åº”æ“ä½œ  
+			 	break; 
+		   	}
+			if(st=='N')//å‘é€æ–¹æ”¶åˆ°æ¥æ”¶æ–¹çš„å‡ºé”™ä¿¡æ¯NAK   
+			{
+		    	cout<<"ä¸Šä¸€ä¸ªå­—ç¬¦å‡ºé”™ï¼"<<endl;
+				cout<<"ç°åœ¨éœ€é‡æ–°å‘é€åŸå­—ç¬¦"<<endl;    
+				datafile1.open("file1",ios::out|ios::in);   
+				if(!datafile1)     
+				{
+		  		cout<<"æ–‡ä»¶æ‰“å¼€å¤±è´¥ï¼"<<endl;
+				exit(0);     
+				}
+		     	datafile1<<s;i++;
+		 		cout<<"å­—ç¬¦å·²è¢«å‘é€"<<endl;    
+				datafile1.close();  
+		    	receiver(i,datafile1,datafile2,datafile3);//è°ƒç”¨æ¥æ”¶ç«¯è¿›è¡Œç›¸åº”æ“ä½œ  
+				break;
+			}
+		}
+		cout<<"å®šæ—¶å™¨è¶…æ—¶ï¼Œç°é‡æ–°å‘é€åŸå­—ç¬¦ã€‚"<<endl;datafile1.open("file1",ios::out|ios::in); 
+		if(!datafile1)
+		{
+			cout<<"æ–‡ä»¶æ‰“å¼€å¤±è´¥ï¼"<<endl;
+			exit(0);     
+		}
+	 	datafile1<<s;
+		i++;
+		cout<<"å­—ç¬¦å·²è¢«å‘é€"<<endl;
+		datafile1.close(); 
+	    receiver(i,datafile1,datafile2,datafile3);
+	}
+}
