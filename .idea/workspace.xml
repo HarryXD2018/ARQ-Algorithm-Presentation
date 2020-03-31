@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c2ba99ef-55b3-48d2-bdd5-91c085578b48" name="Default Changelist" comment="">
+    <list default="true" id="c2ba99ef-55b3-48d2-bdd5-91c085578b48" name="Default Changelist" comment="update sender">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/python version/stop_and_wait_sender.py" beforeDir="false" afterPath="$PROJECT_DIR$/python version/stop_and_wait_sender.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python version/ReceiverService.java" beforeDir="false" afterPath="$PROJECT_DIR$/python version/ReceiverService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,6 +93,9 @@
       <workItem from="1585528747011" duration="6228000" />
       <workItem from="1585542267456" duration="16248000" />
       <workItem from="1585563597219" duration="71000" />
+      <workItem from="1585565133819" duration="201000" />
+      <workItem from="1585565924083" duration="96000" />
+      <workItem from="1585618315464" duration="834000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1585542439432</created>
@@ -135,7 +139,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585561373640</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="update sender">
+      <created>1585565243228</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1585565243228</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TodoView">
@@ -153,33 +164,34 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="update" />
     <MESSAGE value="add ReceiverService.java" />
-    <option name="LAST_COMMIT_MESSAGE" value="add ReceiverService.java" />
+    <MESSAGE value="update sender" />
+    <option name="LAST_COMMIT_MESSAGE" value="update sender" />
   </component>
   <component name="WindowStateProjectService">
     <state x="184" y="112" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1585542610530">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="184" y="112" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900@0.0.1440.900" timestamp="1585542610530" />
-    <state x="281" y="52" key="CommitChangelistDialog2" timestamp="1585561373531">
+    <state x="281" y="52" key="CommitChangelistDialog2" timestamp="1585566019133">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="281" y="52" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1585561373531" />
-    <state width="1398" height="296" key="GridCell.Tab.0.bottom" timestamp="1585565204751">
+    <state x="281" y="52" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1585566019133" />
+    <state width="1398" height="296" key="GridCell.Tab.0.bottom" timestamp="1585566020018">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="296" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1585565204751" />
-    <state width="1398" height="296" key="GridCell.Tab.0.center" timestamp="1585565204750">
+    <state width="1398" height="296" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1585566020018" />
+    <state width="1398" height="296" key="GridCell.Tab.0.center" timestamp="1585566020017">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="296" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1585565204750" />
-    <state width="1398" height="296" key="GridCell.Tab.0.left" timestamp="1585565204749">
+    <state width="1398" height="296" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1585566020017" />
+    <state width="1398" height="296" key="GridCell.Tab.0.left" timestamp="1585566020016">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="296" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1585565204749" />
-    <state width="1398" height="296" key="GridCell.Tab.0.right" timestamp="1585565204750">
+    <state width="1398" height="296" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1585566020016" />
+    <state width="1398" height="296" key="GridCell.Tab.0.right" timestamp="1585566020018">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="296" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1585565204750" />
+    <state width="1398" height="296" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1585566020018" />
     <state width="668" height="302" key="GridCell.Tab.1.bottom" timestamp="1585563033419">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -204,14 +216,14 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="221" y="89" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1585542276563" />
-    <state x="320" y="190" key="Vcs.Push.Dialog.v2" timestamp="1585561376344">
+    <state x="320" y="190" key="Vcs.Push.Dialog.v2" timestamp="1585565246288">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="320" y="190" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1585561376344" />
-    <state x="503" y="374" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1585559875162">
+    <state x="320" y="190" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1585565246288" />
+    <state x="503" y="374" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1585618318425">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="503" y="374" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1440.900@0.0.1440.900" timestamp="1585559875162" />
+    <state x="503" y="374" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1440.900@0.0.1440.900" timestamp="1585618318425" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -235,7 +247,7 @@
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/ARQ_Algorithm_Presentation$stop_and_wait.coverage" NAME="stop_and_wait Coverage Results" MODIFIED="1585565204738" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/python version" />
+    <SUITE FILE_PATH="coverage/ARQ_Algorithm_Presentation$stop_and_wait.coverage" NAME="stop_and_wait Coverage Results" MODIFIED="1585565987452" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/python version" />
     <SUITE FILE_PATH="coverage/ARQ_Algorithm_Presentation$stop_and_wait__1_.coverage" NAME="stop_and_wait (1) Coverage Results" MODIFIED="1585542602675" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/python version" />
   </component>
 </project>
