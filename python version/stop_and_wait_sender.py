@@ -63,7 +63,7 @@ class Sender:
             self.s = (self.s + 1) % 2  # s  变量取反
             self.send_frame(frame)  # 发送副本
             print(frame)
-            time.sleep(0.5)
+
             # 接收返回的ACK帧
             if self.ACK == "Timeout":
                 self.resend_frame()

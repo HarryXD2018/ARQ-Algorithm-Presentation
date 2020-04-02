@@ -9,15 +9,15 @@ import java.util.Date;
 public class ReceiverService {
     int r = 0;
     String content = "";
-    private static final double error_probability = 0.2;//范围(0,1)
+    private static final double error_probability = 0.1;//范围(0,1)
     Long startTs = System.currentTimeMillis();
 
     public String handle(String frame) throws IOException {
         if (Math.random() < error_probability) {
             String _frame = "";
-            for (int i = 0; i < frame.length() - 1; ++i)
-                _frame += String.valueOf(frame.charAt(i)).equals("1") ? "0" : "1";
-            log("模拟出错，将数据"+frame+"更改为"+_frame+"出错概率:"+toString(error_probability*100+"")+"%");
+            int index=(int)(Math.random()*(frame.length()-1)+1);
+            _frame += frame.substring(0,index)+(String.valueOf(frame.charAt(index)).equals("1") ? "0" : "1")+frame.substring(index+1);
+            log("模拟出错，将数据"+frame+"更改为"+_frame+"出错概率:"+error_probability*100+""+"%");
             frame = _frame;
         }
         String seq_number = frame.substring(frame.length() - 1);//序列号
