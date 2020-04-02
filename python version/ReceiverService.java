@@ -1,4 +1,4 @@
-package com.wxapp.springboot.service;
+package com.springboot.service;
 
 import org.springframework.stereotype.Service;
 
@@ -9,14 +9,16 @@ import java.util.Date;
 public class ReceiverService {
     int r = 0;
     String content = "";
-    boolean flag = true;
+    private static final double error_probability = 0.2;//范围(0,1)
     Long startTs = System.currentTimeMillis();
 
     public String handle(String frame) throws IOException {
-        if (frame.equals("011001011") && flag) {
-            log("模拟出错");
-            frame = "010001011";
-            flag = false;
+        if (Math.random() < error_probability) {
+            String _frame = "";
+            for (int i = 0; i < frame.length() - 1; ++i)
+                _frame += String.valueOf(frame.charAt(i)).equals("1") ? "0" : "1";
+            log("模拟出错，将数据"+frame+"更改为"+_frame+"出错概率:"+toString(error_probability*100+"")+"%");
+            frame = _frame;
         }
         String seq_number = frame.substring(frame.length() - 1);//序列号
         int sum_frame = 0;  //对数据位和发送方冗余位求和
@@ -42,7 +44,7 @@ public class ReceiverService {
     public void log(String str) throws IOException {
         Date date = new Date();
         FileWriter fileWriter;
-        fileWriter = new FileWriter("/root/计网实验.txt", true);
+        fileWriter = new FileWriter("/root/计网实验.txt", true);//需要将###更换为文件路径
         fileWriter.write(date.toString() + " " + str + "\r\n");
         fileWriter.flush();
         fileWriter.close();
