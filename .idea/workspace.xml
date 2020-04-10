@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="c2ba99ef-55b3-48d2-bdd5-91c085578b48" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python version/stop_and_wait_sender.py" beforeDir="false" afterPath="$PROJECT_DIR$/python version/stop_and_wait_sender.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,7 +37,6 @@
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
@@ -45,7 +46,7 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.appengine.AppEngineModulesConfigurable" />
   </component>
   <component name="RunManager">
     <configuration name="stop_and_wait" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
@@ -97,6 +98,9 @@
       <workItem from="1585810065929" duration="1019000" />
       <workItem from="1585811497008" duration="105000" />
       <workItem from="1585811810110" duration="1954000" />
+      <workItem from="1585814360673" duration="50000" />
+      <workItem from="1586363033139" duration="25000" />
+      <workItem from="1586520184628" duration="159000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1585542439432</created>
@@ -168,7 +172,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585814238488</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="update README.md">
+      <created>1585814397548</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1585814397548</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TodoView">
@@ -181,7 +192,7 @@
     </todo-panel>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="2" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="update" />
@@ -190,17 +201,18 @@
     <MESSAGE value="update ReceiverService.java and README.md" />
     <MESSAGE value="add random err" />
     <MESSAGE value="update ReceiverService.java" />
-    <option name="LAST_COMMIT_MESSAGE" value="update ReceiverService.java" />
+    <MESSAGE value="update README.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="update README.md" />
   </component>
   <component name="WindowStateProjectService">
     <state x="184" y="112" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1585542610530">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="184" y="112" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900@0.0.1440.900" timestamp="1585542610530" />
-    <state x="281" y="52" key="CommitChangelistDialog2" timestamp="1585814238309">
+    <state x="281" y="52" key="CommitChangelistDialog2" timestamp="1585814397378">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="281" y="52" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1585814238309" />
+    <state x="281" y="52" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1585814397378" />
     <state width="1398" height="302" key="GridCell.Tab.0.bottom" timestamp="1585814255785">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -237,18 +249,18 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="431" y="173" key="MultipleFileMergeDialog/0.0.1440.900@0.0.1440.900" timestamp="1585542463155" />
-    <state x="221" y="89" key="SettingsEditor" timestamp="1585542276563">
+    <state x="221" y="89" key="SettingsEditor" timestamp="1586363057750">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="221" y="89" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1585542276563" />
-    <state x="320" y="190" key="Vcs.Push.Dialog.v2" timestamp="1585814241225">
+    <state x="221" y="89" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1586363057750" />
+    <state x="320" y="190" key="Vcs.Push.Dialog.v2" timestamp="1585814400820">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="320" y="190" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1585814241225" />
-    <state x="503" y="374" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1585812015954">
+    <state x="320" y="190" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1585814400820" />
+    <state x="503" y="374" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1586520257196">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="503" y="374" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1440.900@0.0.1440.900" timestamp="1585812015954" />
+    <state x="503" y="374" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1440.900@0.0.1440.900" timestamp="1586520257196" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -34,19 +34,15 @@ class Sender:
 
     def send_frame(self, frame):
         print("Send frame: Parity:{}\t Frame:{}\t sequence_number:{}".format(frame[0], frame[1:-1], frame[-1]))
-        url = "https://flxdu.cn/api/test?frame=" + frame
-        r = requests.get(url)
-        # url = "https://127.0.0.1:8189/api/test?frame=" + frame # For test use
-        # r = requests.get(url,verify=False) # For test use
+        url = "https://127.0.0.1:8189/api/test?frame=" + frame
+        r = requests.get(url, verify=False)
         self.ACK = r.text
         return frame
 
     def resend_frame(self):
         print("Resend Frame {}".format(self.store_frame))
-        url = "https://flxdu.cn/api/test?frame=" + self.store_frame
-        r = requests.get(url)
-        # url = "https://127.0.0.1:8189/api/test?frame=" + self.store_frame # For test use
-        # r = requests.get(url,verify=False) # For test use
+        url = "https://127.0.0.1:8189/api/test?frame=" + self.store_frame
+        r = requests.get(url, verify=False)
         self.ACK = r.text
         return self.store_frame
 
